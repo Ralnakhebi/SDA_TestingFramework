@@ -30,8 +30,10 @@ public class AddContactPage extends BasePage {
     private WebElement street2;
     @FindBy(xpath = "//button[@id='submit']")
     private WebElement submit;
-
-
+    @FindBy(xpath = "//button[@id='cancel']")
+    private WebElement cancel;
+    @FindBy(id = "logout")
+    private WebElement logoutButton;
     public AddContactPage(WebDriver driver) {
         super(driver);
     }
@@ -84,5 +86,13 @@ public class AddContactPage extends BasePage {
         submit.click();
     }
 
+    public void clickCancelButton() {
+
+        cancel.click();
+    }
+    public void clickLogoutButton() {
+
+        logoutButton.click();
+    }
 
 }
