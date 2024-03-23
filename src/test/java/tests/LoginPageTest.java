@@ -12,7 +12,7 @@ public class LoginPageTest extends TestBase {
 
     @Test
     public void test(){
-        LoginPage loginPage= new LoginPage(driver);
+        LoginPage loginPage= new LoginPage();
 
         loginPage.enterUsername("");
         loginPage.enterUsername("");
